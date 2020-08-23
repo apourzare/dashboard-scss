@@ -1,0 +1,34 @@
+@import url("https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css");
+* {
+  font-family: Vazir;
+}
+
+.toggle-sidebar:hover {
+  cursor: pointer;
+}
+
+.toggle-sidebar > i {
+  color: #e5e5e5;
+  font-size: 1.3rem !important;
+}
+
+.toggle-sidebar a {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+  .hideSidebar {
+    left: 0px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hideSidebar {
+    width: 125px !important;
+    transition: 0.3s ease !important;
+  }
+  .hideSidebar span {
+    display: none;
+  }
+}
+/*# sourceMappingURL=layouts.css.map */
