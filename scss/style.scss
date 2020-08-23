@@ -1,0 +1,42 @@
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default; // #222
+$gray-dark: #67655D; // #333
+$gray: #B74934; // #555
+$gray-light: #AA9A66; // #777
+$gray-lighter: #A8A8A1; // #eee
+ 
+$primary: #577492; // #337ab7
+$success: #5cb85c !default;
+$info: #5bc0de !default;
+$warning: #f0ad4e !default;
+$danger: #d9534f !default;
+$light: #e5e5e5 !default;
+$secondary: #6c757d !default;
+
+@import "./bootstrap/bootstrap.scss";
+
+li.dropdown {
+    & > a.dropdown-toggle {
+        & > img {
+            width: 2rem;
+            height: auto;
+        }
+    }
+    & > ul.dropdown-menu {
+        background-color: $dark;
+        & > li {
+            &:hover {
+                & > a {
+                    // color: $dark !important;
+                    background-color: $primary !important;
+                } 
+            }
+            & > a {
+                color: $light !important;
+            }
+        }
+    }
+}
+
+
+
